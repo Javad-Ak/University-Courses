@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=class\ StockDemo
+comment0.text=\nDemonstrate\ the\ StockManager\ and\ Product\ classes.\nThe\ demonstration\ becomes\ properly\ functional\ as\nthe\ StockManager\ class\ is\ completed.\n\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling\n@version\ 2003.01.10\n\n
+comment1.params=id
+comment1.target=void\ sellProduct(int)
+comment1.text=\nSell\ one\ of\ the\ given\ item.\nShow\ the\ before\ and\ after\ status\ of\ the\ product.\n@param\ id\ The\ ID\ of\ the\ product\ being\ sold.\n\n
+comment2.params=
+comment2.target=StockDemo()
+comment2.text=\nCreate\ a\ StockManager\ and\ populate\ it\ with\ a\ few\nsample\ products.\n\n
+comment3.target=manager
+comment4.params=
+comment4.target=StockManager\ getManager()
+comment4.text=\n@return\ The\ stock\ manager.\n\n
+comment5.params=id
+comment5.target=void\ showDetails(int)
+comment5.text=\nShow\ details\ of\ the\ given\ product.\ If\ found,\nits\ name\ and\ stock\ quantity\ will\ be\ shown.\n@param\ id\ The\ ID\ of\ the\ product\ to\ look\ for.\n\n
+comment6.params=
+comment6.target=void\ demo()
+comment6.text=\nProvide\ a\ very\ simple\ demonstration\ of\ how\ a\ StockManager\nmight\ be\ used.\ Details\ of\ one\ product\ are\ shown,\ the\nproduct\ is\ restocked,\ and\ then\ the\ details\ are\ shown\ again.\n\n
+comment7.params=id
+comment7.target=Product\ getProduct(int)
+comment7.text=\nGet\ the\ product\ with\ the\ given\ id\ from\ the\ manager.\nAn\ error\ message\ is\ printed\ if\ there\ is\ no\ match.\n@param\ id\ The\ ID\ of\ the\ product.\n@return\ The\ Product,\ or\ null\ if\ no\ matching\ one\ is\ found.\n\n
+numComments=8

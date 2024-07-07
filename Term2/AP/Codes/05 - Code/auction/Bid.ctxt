@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=class\ Bid
+comment0.text=\nA\ class\ that\ models\ an\ auction\ bid.\nIt\ contains\ a\ reference\ to\ the\ Person\ bidding\ and\ the\ amount\ bid.\n\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling.\n@version\ 2005.07.07\n\n
+comment1.params=
+comment1.target=long\ getValue()
+comment1.text=\n@return\ The\ value\ of\ the\ bid.\n\n
+comment2.params=
+comment2.target=Person\ getBidder()
+comment2.text=\n@return\ The\ bidder.\n\n
+comment3.target=value
+comment4.target=bidder
+comment5.params=bidder\ value
+comment5.target=Bid(Person,long)
+comment5.text=\nCreate\ a\ bid.\n@param\ bidder\ Who\ is\ bidding\ for\ the\ lot.\n@param\ value\ The\ value\ of\ the\ bid.\n\n
+numComments=6

@@ -1,0 +1,247 @@
+Finishing the main thread ...
+Apple0
+Orange0
+Orange1
+Orange2
+Orange3
+Orange4
+Orange5
+Apple1
+Apple2
+Apple3
+Apple4
+Apple5
+Apple6
+Apple7
+Apple8
+Apple9
+---------------------------------
+Finishing the main thread ...
+Orange0
+Apple0
+Orange1
+Apple1
+Orange2
+Apple2
+Orange3
+Apple3
+Apple4
+Apple5
+Apple6
+Apple7
+Apple8
+Apple9
+Orange4
+Orange5
+==========================================
+Starting Runnable threads
+Runnable Threads has been started
+Starting MyThreads
+MyThreads has been started
+Doing heavy processing - START t2
+RunnableExample.MyThread - START t3
+Doing heavy processing - START t1
+RunnableExample.MyThread - START t4
+RunnableExample.MyThread - END t3
+Doing heavy processing - END t1
+RunnableExample.MyThread - END t4
+Doing heavy processing - END t2
+-----------------------------------------
+Starting Runnable threads
+Runnable Threads has been started
+Starting MyThreads
+MyThreads has been started
+RunnableExample.MyThread - START t3
+Doing heavy processing - START t2
+Doing heavy processing - START t1
+RunnableExample.MyThread - START t4
+RunnableExample.MyThread - END t3
+Doing heavy processing - END t1
+RunnableExample.MyThread - END t4
+Doing heavy processing - END t2
+===========================================
+Starting Executor
+task1 going to sleep for 2059 milliseconds.
+task2 going to sleep for 3948 milliseconds.
+task3 going to sleep for 2262 milliseconds.
+Tasks started, main ends.
+
+task1 done sleeping
+task3 done sleeping
+task2 done sleeping
+----------------------------------
+Starting Executor
+Tasks started, main ends.
+
+task1 going to sleep for 4708 milliseconds.
+task3 going to sleep for 1405 milliseconds.
+task2 going to sleep for 3012 milliseconds.
+task3 done sleeping
+task2 done sleeping
+task1 done sleeping
+===========================================
+UnsynchronizedExample:
+
+pool-1-thread-2 wrote 11 to element 0.
+Next write index: 1
+pool-1-thread-2 wrote 12 to element 1.
+Next write index: 2
+pool-1-thread-1 wrote  1 to element 0.
+Next write index: 3
+pool-1-thread-2 wrote 13 to element 2.
+Next write index: 4
+pool-1-thread-1 wrote  2 to element 3.
+Next write index: 5
+pool-1-thread-1 wrote  3 to element 5.
+Next write index: 6
+
+Contents of SimpleArray:
+[1, 12, 13, 2, 0, 3]
+-----------------------------------------
+pool-1-thread-1 wrote  1 to element 0.
+Next write index: 1
+pool-1-thread-2 wrote 11 to element 0.
+Next write index: 2
+pool-1-thread-1 wrote  2 to element 1.
+Next write index: 3
+pool-1-thread-1 wrote  3 to element 3.
+Next write index: 4
+pool-1-thread-2 wrote 12 to element 2.
+Next write index: 5
+pool-1-thread-2 wrote 13 to element 5.
+Next write index: 6
+
+Contents of SimpleArray:
+[11, 2, 12, 3, 0, 13]
+====================================================
+SynchronizedExample:
+
+pool-1-thread-1 wrote  1 to element 0.
+Next write index: 1
+pool-1-thread-1 wrote  2 to element 1.
+Next write index: 2
+pool-1-thread-2 wrote 11 to element 2.
+Next write index: 3
+pool-1-thread-1 wrote  3 to element 3.
+Next write index: 4
+pool-1-thread-2 wrote 12 to element 4.
+Next write index: 5
+pool-1-thread-2 wrote 13 to element 5.
+Next write index: 6
+
+Contents of SimpleArray:
+[1, 2, 11, 3, 12, 13]
+-----------------------------------------
+pool-1-thread-1 wrote  1 to element 0.
+Next write index: 1
+pool-1-thread-1 wrote  2 to element 1.
+Next write index: 2
+pool-1-thread-2 wrote 11 to element 2.
+Next write index: 3
+pool-1-thread-1 wrote  3 to element 3.
+Next write index: 4
+pool-1-thread-2 wrote 12 to element 4.
+Next write index: 5
+pool-1-thread-2 wrote 13 to element 5.
+Next write index: 6
+
+Contents of SimpleArray:
+[1, 2, 11, 3, 12, 13]
+=======================================================
+ProdConsumExample:
+Producer writes  1	Buffer cells occupied: 1
+Consumer reads   1	Buffer cells occupied: 0
+Producer writes  2	Buffer cells occupied: 1
+Consumer reads   2	Buffer cells occupied: 0
+Producer writes  3	Buffer cells occupied: 1
+Consumer reads   3	Buffer cells occupied: 0
+Producer writes  4	Buffer cells occupied: 1
+Consumer reads   4	Buffer cells occupied: 0
+Producer writes  5	Buffer cells occupied: 1
+Consumer reads   5	Buffer cells occupied: 0
+Producer writes  6	Buffer cells occupied: 1
+Consumer reads   6	Buffer cells occupied: 0
+Producer writes  7	Buffer cells occupied: 1
+Consumer reads   7	Buffer cells occupied: 0
+Producer writes  8	Buffer cells occupied: 1
+Consumer reads   8	Buffer cells occupied: 0
+Producer writes  9	Buffer cells occupied: 1
+Consumer reads   9	Buffer cells occupied: 0
+Producer writes 10	Buffer cells occupied: 1
+Producer done producing
+Terminating Producer
+Consumer reads  10	Buffer cells occupied: 0
+
+Consumer read values totaling 55
+Terminating Consumer
+======================================================
+WaitNotifyExample:
+Operation                               Buffer		Occupied
+---------                               ------		--------
+
+Consumer tries to read.
+Buffer empty. Consumer waits.           -1		false
+
+Producer writes 1                       1		true
+
+Consumer reads 1                        1		false
+
+Producer writes 2                       2		true
+
+Producer tries to write.
+Buffer full. Producer waits.pool-1-thread-12		true
+
+Consumer reads 2                        2		false
+
+Producer writes 3                       3		true
+
+Consumer reads 3                        3		false
+
+Producer writes 4                       4		true
+
+Consumer reads 4                        4		false
+
+Consumer tries to read.
+Buffer empty. Consumer waits.           4		false
+
+Producer writes 5                       5		true
+
+Consumer reads 5                        5		false
+
+Producer writes 6                       6		true
+
+Consumer reads 6                        6		false
+
+Consumer tries to read.
+Buffer empty. Consumer waits.           6		false
+
+Producer writes 7                       7		true
+
+Consumer reads 7                        7		false
+
+Consumer tries to read.
+Buffer empty. Consumer waits.           7		false
+
+Producer writes 8                       8		true
+
+Consumer reads 8                        8		false
+
+Consumer tries to read.
+Buffer empty. Consumer waits.           8		false
+
+Producer writes 9                       9		true
+
+Consumer reads 9                        9		false
+
+Consumer tries to read.
+Buffer empty. Consumer waits.           9		false
+
+Producer writes 10                      10		true
+
+Consumer reads 10                       10		false
+
+Producer done producing
+Terminating Producer
+
+Consumer read values totaling 55
+Terminating Consumer
