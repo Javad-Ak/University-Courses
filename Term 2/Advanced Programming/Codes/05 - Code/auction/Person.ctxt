@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=class\ Person
+comment0.text=\nMaintain\ details\ of\ someone\ who\ participates\ in\ an\ auction.\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling.\n@version\ 2005.07.07\n\n
+comment1.params=name
+comment1.target=Person(String)
+comment1.text=\nCreate\ a\ new\ person\ with\ the\ given\ name.\n@param\ name\ The\ person's\ name.\n\n
+comment2.target=name
+comment3.params=
+comment3.target=String\ getName()
+comment3.text=\n@return\ The\ person's\ name.\n\n
+numComments=4
